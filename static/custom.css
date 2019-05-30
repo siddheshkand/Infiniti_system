@@ -1,0 +1,7 @@
+* {
+    /*border-radius: 0!important;*/
+}
+
+.form-control, .btn {
+    border-radius: 0;
+}
