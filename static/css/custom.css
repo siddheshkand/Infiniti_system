@@ -9725,8 +9725,7 @@ h3 {
 
 .icon-hover:hover {
   color: #f57c00;
-  transition-duration: 0.2s, 1s;
-  transition-timing-function: linear;
+  transition: color 0.2s, color 0.2s;
 }
 
 @media only screen and (max-width: 992px) {
