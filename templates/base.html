@@ -7,7 +7,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Infiniti System</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    {#    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">#}
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
@@ -48,7 +49,7 @@
                     <a class="nav-link" href="#about_us">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contact_us">Contact Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">News &amp; events</a>
@@ -94,13 +95,11 @@
 
             <div class="col-6 head-section-right">
                 <img src="{% static 'img/header-img.png' %}"
-                     class="head-section-img">
+                     class="head-section-img" alt="header-img">
                 <div class="text-white header-img-text font-slab">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, asperiores atque blanditiis
                     consequuntur deleniti doloremque enim eveniet excepturi fugiat in minima, molestiae necessitatibus
-                    omnis optio perspiciatis quisquam, repellendus sunt unde?
-
-
+                    omnis optio perspiciatis quisquam, repellendus sunt under?
                 </div>
             </div>
         </div>
@@ -112,7 +111,7 @@
             <div style="height: 2rem"></div>
             <div class="h1 text-center" id="about_us">About Us</div>
             <hr style="width:150px;border:3px solid #f57c00;border-radius: 15px;">
-            <p class="text-capitalize font-weight-bolder text-justify">communication, empowerment, trust, integrity and
+            <p class="text-capitalize text-justify">communication, empowerment, trust, integrity and
                 giving
                 back to the community, and these same values
                 thrive at Infinitisystems today. Infiniti systems family brings together a rich experience across
@@ -120,36 +119,36 @@
             <br>
             <div class="row">
                 <div class="col-sm">
-                    <div class="card border-rm material-border" >
+                    <div class="card border-rm material-border">
                         <i class="material-icons icon-hover icon-size-1 text-center">
                             all_out
                         </i>
-                        <div class="card-body" >
-                            <p class="card-text text-justify">Some quick example text to build on the card title and
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and
                                 make up the
                                 bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card border-rm material-border" >
+                    <div class="card border-rm material-border">
                         <i class="material-icons icon-hover icon-size-1 text-center">
                             https
                         </i>
-                        <div class="card-body" >
-                            <p class="card-text text-justify">Some quick example text to build on the card title and
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and
                                 make up the
                                 bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card border-rm material-border" >
+                    <div class="card border-rm material-border">
                         <i class="material-icons icon-hover icon-size-1 text-center">
                             done_all
                         </i>
-                        <div class="card-body" >
-                            <p class="card-text text-justify">Some quick example text to build on the card title and
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and
                                 make up the
                                 bulk of the card's content.</p>
                         </div>
@@ -158,7 +157,45 @@
             </div>
         </div>
     </div>
-
+    <div id="contact_us">
+        <div class="container">
+            <div style="height: 2rem"></div>
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Address</h2>
+                    <p>21/22, Bandal Dhankude Plaza, Paud Road, Kothrud Pune-411038 Maharashtra India</p>
+                    <div>
+                        <iframe class="material-border"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945.8634876946257!2d73.79307788806157!3d18.508377299209663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb400000001%3A0x50875d6a385f083e!2sNi+Logic+Limited!5e0!3m2!1sen!2sin!4v1559629421625!5m2!1sen!2sin"
+                                height="195" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h2>Contact us</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                   placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div style="height: 2rem"></div>
+        </div>
     </div>
 
 {% endblock body %}
